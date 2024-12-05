@@ -15,4 +15,4 @@ class Symbol:
 
 
 '''Calling class to print out symbol'''
-print(Symbol("Alpha", "A", (12,34)).__doc__)
+print(Symbol("Alpha", "A", (12,34)))
