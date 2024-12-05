@@ -23,7 +23,15 @@
 <td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
     
 <tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
-<td class="singlecolumn"><dl><dt><a name="-SymbolBackstory"><strong>SymbolBackstory</strong></a>(symbolName, symbolLook, symbolLocation)</dt><dd><span class="code">Generates&nbsp;a&nbsp;backstory&nbsp;for&nbsp;a&nbsp;given&nbsp;symbol.<br>
+<td class="singlecolumn"><dl><dt><a name="-EnvironmentalClues"><strong>EnvironmentalClues</strong></a>(symbolName, symbolLocation)</dt><dd><span class="code">Generates&nbsp;environmental&nbsp;clues&nbsp;that&nbsp;hint&nbsp;at&nbsp;the&nbsp;symbol's&nbsp;presence.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;symbolName&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;symbol.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;symbolLocation&nbsp;(tuple):&nbsp;The&nbsp;location&nbsp;of&nbsp;the&nbsp;symbol&nbsp;as&nbsp;(x,&nbsp;y).<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list:&nbsp;A&nbsp;list&nbsp;of&nbsp;clues&nbsp;describing&nbsp;the&nbsp;environment&nbsp;around&nbsp;the&nbsp;symbol.</span></dd></dl>
+ <dl><dt><a name="-SymbolBackstory"><strong>SymbolBackstory</strong></a>(symbolName, symbolLook, symbolLocation)</dt><dd><span class="code">Generates&nbsp;a&nbsp;backstory&nbsp;for&nbsp;a&nbsp;given&nbsp;symbol.<br>
 &nbsp;<br>
 Args:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;symbolName&nbsp;(str):&nbsp;The&nbsp;name&nbsp;of&nbsp;the&nbsp;symbol.<br>
@@ -39,6 +47,8 @@ Returns:<br>
     
 <tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
 <td class="singlecolumn"><strong>backstory</strong> = "The symbol 'LostKey', marked by its distinctive ...entured there have returned to confirm the truth."<br>
+<strong>clue</strong> = "A cluster of twisted trees forms a natural barri... branches pointing towards the symbol's location."<br>
+<strong>environmentalClues</strong> = ["You notice an ancient inscription on a crumbling wall: 'Here lies the mark of destiny.'", 'A hidden path leads through dense vegetation, the trail marked by faint glowing lights at night.', "A cluster of twisted trees forms a natural barri... branches pointing towards the symbol's location."]<br>
 <strong>symbolLocation</strong> = (42, 87)<br>
 <strong>symbolLook</strong> = '&amp;'<br>
 <strong>symbolName</strong> = 'LostKey'</td></tr></table>

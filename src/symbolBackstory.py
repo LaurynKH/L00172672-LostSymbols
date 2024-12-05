@@ -52,6 +52,45 @@ def SymbolBackstory(symbolName, symbolLook, symbolLocation):
 
     return backstory
 
+def EnvironmentalClues(symbolName, symbolLocation):
+    """
+    Generates environmental clues that hint at the symbol's presence.
+
+    Args:
+        symbolName (str): The name of the symbol.
+        symbolLocation (tuple): The location of the symbol as (x, y).
+
+    Returns:
+        list: A list of clues describing the environment around the symbol.
+    """
+    clues = [
+        "The air grows colder as you approach, and a faint hum resonates in the distance.",
+        "Strange symbols, similar to the symbol's appearance, are etched into nearby rocks.",
+        "The ground is scorched in peculiar patterns, as if by ancient magic.",
+        "A cluster of twisted trees forms a natural barrier, their branches pointing towards the symbol's location.",
+        "The faint smell of sulfur and the sound of whispering winds surround the area.",
+        "Nearby wildlife avoids the location, and the silence is almost unnatural.",
+        "You notice an ancient inscription on a crumbling wall: 'Here lies the mark of destiny.'",
+        "A hidden path leads through dense vegetation, the trail marked by faint glowing lights at night."
+    ]
+
+    selected_clues = random.sample(clues, 3)  # Select 3 random clues
+    return selected_clues
+
+# Example usage
+symbolName = "LostKey"
+symbolLook = "&"
+symbolLocation = (42, 87)
+
+backstory = SymbolBackstory(symbolName, symbolLook, symbolLocation)
+environmentalClues = EnvironmentalClues(symbolName, symbolLocation)
+
+print(backstory)
+print("\nEnvironmental Clues:")
+for clue in environmentalClues:
+    print(f"- {clue}")
+
+
 # Example usage
 symbolName = "LostKey"
 symbolLook = "&"
