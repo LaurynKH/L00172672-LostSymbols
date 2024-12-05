@@ -8,10 +8,6 @@ class Symbol:
         self.look = look
         '''Location of the Symbol'''
         self.location = location
-    
-    '''To string'''
-    def __str__(self):
-        return f"Symbol(Name: {self.name}, Look: {self.look}, Location: {self.location})"
 
     '''Repr'''
     def __repr__(self):
@@ -19,4 +15,4 @@ class Symbol:
 
 
 '''Calling class to print out symbol'''
-print(Symbol("Alpha", "A", (12,34)).__doc__);
+print(Symbol("Alpha", "A", (12,34)).__doc__)
